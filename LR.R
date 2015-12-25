@@ -1,0 +1,7 @@
+data <- read.csv('~/git/R-Linear-Regression/rosn.txt', sep='\t')
+fit <- lm(data$ROSN ~ data$BRN ) 
+summary(fit) 
+png(filename="~/git/R-Linear-Regression/LR.png")
+plot(data$ROSN~data$BRN, xlab="ROSN", ylab="data$BRN")
+abline(fit)
+dev.off()
