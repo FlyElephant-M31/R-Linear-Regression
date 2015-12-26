@@ -1,2 +1,3 @@
 #!/bin/sh
-Rscript LR.R
+uname -a > result.dat
+Rscript LR.R > result.dat
