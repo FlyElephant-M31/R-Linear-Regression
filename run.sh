@@ -1,5 +1,5 @@
 #!/bin/sh
-R --version >> result.dat
-Rscript --version >> result.dat
-uname -a >> result.dat
-Rscript LR.R >> result.dat
+R --version | tee result.dat
+Rscript --version | tee result.dat
+uname -a | tee result.dat
+Rscript LR.R | tee result.dat
